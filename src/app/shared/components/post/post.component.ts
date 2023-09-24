@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, Output} from '@angular/core';
 import {Post} from "../../interfaces";
 
 @Component({
@@ -9,5 +9,6 @@ import {Post} from "../../interfaces";
 export class PostComponent {
 
   @Input() post!: Post
+  @Input() idx!: number
 
 }

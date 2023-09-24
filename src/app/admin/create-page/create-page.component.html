@@ -1,3 +1,5 @@
+<div class="wrapper">
+
 <form [formGroup]="form" (ngSubmit)="submit()">
   <h1>Создание нового поста</h1>
 
@@ -13,7 +15,7 @@
     </div>
   </div>
 
-  <div class="form-control">
+  <div class="form-control form-control-flex">
     <label>Контент поста:</label>
     <quill-editor formControlName="text"></quill-editor>
   </div>
@@ -31,8 +33,9 @@
   </div>
 
   <button
-    class="btn btn-dark"
+    class="dashboard__btn"
     type="submit"
     [disabled]="form.invalid"
   >Создать пост</button>
 </form>
+</div>

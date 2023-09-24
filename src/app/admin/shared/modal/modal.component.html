@@ -1,0 +1,14 @@
+<div class="modal-wrap">
+  <div class="modal">
+    <div class="modal__title">{{ title }}</div>
+    <div class="modal__text">{{ text }}</div>
+    <div class="modal__list">
+      <button
+        (click)="deletePost()"
+        class="btn-delete">удалить</button>
+      <button
+        (click)="closeModal()"
+        class="btn-back">отменить</button>
+    </div>
+  </div>
+</div>

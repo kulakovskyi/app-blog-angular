@@ -10,7 +10,7 @@
 /.firebase
 /.github
 /.vscode
-/src/environments
+
 
 # Node
 /node_modules

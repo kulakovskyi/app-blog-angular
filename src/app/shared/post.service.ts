@@ -33,7 +33,6 @@ export class PostService {
             id: key,
             date: new Date(response[key].date)
           }))
-
     }))
   }
 
@@ -48,6 +47,7 @@ export class PostService {
         return newPost
       }))
   }
+
 
   remove(id: string): Observable<void>{
     return this.http.delete<void>(`${environment?.['fbDBUrl']}/posts/${id}.json`)

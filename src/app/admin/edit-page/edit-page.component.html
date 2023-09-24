@@ -1,3 +1,4 @@
+<div class="wrapper">
 <div *ngIf="form; else loading">
   <form [formGroup]="form" (ngSubmit)="submit()">
     <div
@@ -19,10 +20,11 @@
     <button
       [disabled]="form.invalid || submitted"
       type="submit"
-      class="btn btn-primary">Обновить</button>
+      class="dashboard__btn">Обновить</button>
   </form>
 </div>
 
 <ng-template #loading>
-  <p class="text-center">Loading...</p>
+  <app-loader></app-loader>
 </ng-template>
+</div>

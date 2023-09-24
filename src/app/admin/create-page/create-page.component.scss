@@ -1,0 +1,23 @@
+.wrapper{
+  padding: 40px 30px;
+}
+
+.dashboard__btn {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;;
+  padding: 9px 25px;
+  border: none;
+  outline: none;
+  background: #2C3955;
+  color: #68A4FF;
+  transition: background-color .3s ease;
+  &:hover{
+    background: #394a70;
+  }
+}
+
+.form-control-flex{
+  display: flex;
+  flex-direction: column;
+}

@@ -1,9 +1,11 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 20% 80%;
 }
 
 .aside {
+  position: fixed;
+  z-index: 15;
+  width: 20%;
   background: linear-gradient(176deg, rgba(102, 117, 174, 0.10) 1.92%, rgba(43, 62, 105, 0.10) 90.46%);
   min-height: 100vh;
   padding: 40px 30px;
@@ -18,9 +20,26 @@
     margin: 0 0 50px 0;
   }
 
-
-
 }
+
+.main{
+  width: 100%;
+  padding-left: 20%;
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  &__top{
+    padding: 20px 30px;
+    width: 100%;
+    border-bottom: 1px solid #2B3E69 ;
+  }
+  &__title{
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
 
 .menu {
   flex: 1 1 auto;
@@ -55,7 +74,10 @@
   &__login{
     color: #FFFFFF;
     width: 100%;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
     padding: 16px 12px;
     font-size: 16px;
     font-weight: 600;
@@ -67,5 +89,6 @@
     }
   }
 }
+
 
 

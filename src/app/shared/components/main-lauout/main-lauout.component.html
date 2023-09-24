@@ -4,17 +4,24 @@
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__item" routerLinkActive="active"><a [routerLink]="['']" class="menu__link">Главная</a></li>
-        <li class="menu__item"><a class="menu__link">Главная</a></li>
-        <li class="menu__item"><a class="menu__link">Главная</a></li>
-        <li class="menu__item"><a class="menu__link">Главная</a></li>
       </ul>
+
+
     </nav>
-    <a [routerLink]="['/admin']" class="menu__login">img Войти</a>
+    <a [routerLink]="['/admin']" class="menu__login">
+      <img ngSrc="assets/image/icon-login.svg"
+           alt="icon" height="24"
+           width="24"> Войти</a>
   </aside>
   <main class="main">
-    <div class="main__container">
+    <div class="main__wrapper">
+      <div class="main__top">
+        <h2
+          class="main__title">Меню</h2>
+      </div>
       <router-outlet></router-outlet>
     </div>
+
   </main>
 </div>
 

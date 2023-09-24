@@ -1,3 +1,41 @@
+.wrapper{
+  padding: 40px 30px;
+}
+
 .open{
   margin-right: 10px;
+}
+
+.dashboard__btn {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;;
+  padding: 9px 25px;
+  border: none;
+  outline: none;
+  background: #2C3955;
+  color: #68A4FF;
+  margin: 0 10px 0 0;
+  transition: background-color .3s ease;
+  &:hover{
+    background: #394a70;
+  }
+
+}
+
+.dashboard__btn-red {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;;
+  padding: 11px 35px;
+  border: none;
+  outline: none;
+  background: #FD3162;
+  color: #FFFFFF;
+  transition: background-color .3s ease;
+  &:hover{
+    background: #af2949;
+  }
+
 }

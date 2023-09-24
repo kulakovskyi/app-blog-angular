@@ -2,6 +2,16 @@
 @import "~quill/dist/quill.core.css";
 @import "~quill/dist/quill.snow.css";
 
+.ql-editor{
+  padding: 40px 30px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+}
+
+
+
+
+
 :root {
   --primary-color: #dc3545;
   --dark-color: #333333;
@@ -23,6 +33,9 @@ body {
   background: linear-gradient(117deg, #1E212D 0%, #21273D 0.01%, #1D202E 91.49%);
   color: #FFFFFF;
   min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
 }
 
 a {
@@ -40,7 +53,7 @@ ul {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .container {
@@ -95,16 +108,19 @@ img {
 }
 
 .btn {
-  display: inline-block;
-  background: var(--light-color);
-  color: #333;
-  padding: 0.4rem 1.3rem;
-  font-size: 1rem;
-  border: none;
   cursor: pointer;
-  margin-right: 0.5rem;
-  transition: opacity 0.2s ease-in;
+  text-align: center;
+  border-radius: 4px;
+  min-width: 235px;
+  padding: 11px 15px;
+  border: none;
   outline: none;
+  background: #2C3955;
+  color: #68A4FF;
+  transition: background-color .3s ease;
+  &:hover{
+    background: #394a70;
+  }
 
   &:disabled {
     cursor: not-allowed;
@@ -198,9 +214,6 @@ img {
   border: #ccc solid 1px;
 }
 
-.btn:hover {
-  opacity: 0.8;
-}
 
 .bg-light,
 .badge-light {
@@ -258,7 +271,7 @@ table td {
 }
 
 table th {
-  background: var(--light-color);
+  background: #0057FF;
 }
 
 .navbar {

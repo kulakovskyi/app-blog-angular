@@ -1,6 +1,7 @@
 import {NgModule} from "@angular/core";
 import {HttpClientModule} from "@angular/common/http";
 import {QuillModule} from "ngx-quill";
+import { LoaderComponent } from './components/loader/loader.component';
 
 
 
@@ -10,9 +11,13 @@ import {QuillModule} from "ngx-quill";
     QuillModule.forRoot()
 
   ],
-  exports: [
-    HttpClientModule,
-    QuillModule
+    exports: [
+        HttpClientModule,
+        QuillModule,
+        LoaderComponent
+    ],
+  declarations: [
+    LoaderComponent
   ]
 })
 

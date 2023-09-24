@@ -23,6 +23,7 @@ export class PostPageComponent implements OnInit{
       .pipe(switchMap((params: Params) => {
         return this.postService.getById(params['id'])
       }))
+
   }
 
 }

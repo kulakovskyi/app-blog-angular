@@ -1,7 +1,8 @@
-<div *ngIf="posts.length; else loading">
-
+<div *ngIf="posts.length; else loading" class="wrapper">
   <div class="form-control">
-    <input type="text" placeholder="Найти пост" [(ngModel)]="searchStr">
+    <input type="text"
+           placeholder="Найти пост"
+           [(ngModel)]="searchStr">
   </div>
   <table>
     <thead>
@@ -22,11 +23,9 @@
       <td>
         <button
           [routerLink]="['/admin', 'post', post.id, 'edit']"
-          class="btn btn-link open">Открыть пост
+          class="dashboard__btn">Открыть пост
         </button>
-
-
-        <a (click)="remove(post.id!)">Удалить</a>
+        <a (click)="showModal(post.id!)" class="dashboard__btn-red">Удалить</a>
       </td>
     </tr>
     </tbody>
@@ -34,5 +33,6 @@
 </div>
 
 <ng-template #loading>
-  <p class="text-center">Loading...</p>
+  <app-loader></app-loader>
 </ng-template>
+

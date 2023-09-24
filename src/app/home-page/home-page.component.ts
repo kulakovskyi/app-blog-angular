@@ -11,12 +11,17 @@ import {Post} from "../shared/interfaces";
 export class HomePageComponent implements OnInit{
 
   posts$!: Observable<Post[]>
+
+
+
   constructor(private postService: PostService) {
   }
 
   ngOnInit() {
     this.posts$ = this.postService.getAll()
+
   }
+
 
 
 }
