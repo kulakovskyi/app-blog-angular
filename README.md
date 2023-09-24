@@ -1,3 +1,3 @@
 # BlogApp
 
-<a href="https://angular-blog-96827.web.app/admin/dashboard">Link App</a>
+<a href="https://angular-blog-96827.web.app/">Link App</a>

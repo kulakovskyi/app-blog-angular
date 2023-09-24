@@ -40,5 +40,6 @@ export class CreatePageComponent implements OnInit{
       this.form.reset()
       this.alert.success('Пост был создан')
     })
+
   }
 }

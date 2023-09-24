@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
 @import "~quill/dist/quill.core.css";
 @import "~quill/dist/quill.snow.css";
 
@@ -20,18 +20,19 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
-  color: #333;
+  background: linear-gradient(117deg, #1E212D 0%, #21273D 0.01%, #1D202E 91.49%);
+  color: #FFFFFF;
+  min-height: 100vh;
 }
 
 a {
-  color: var(--primary-color);
+  //color: var(--primary-color);
   cursor: pointer;
   text-decoration: none;
 
-  &:hover {
-    color: #666;
-  }
+  //&:hover {
+  //  color: #666;
+  //}
 }
 
 ul {
